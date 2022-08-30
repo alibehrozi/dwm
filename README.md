@@ -2,6 +2,21 @@
 
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+## Patches
+- [xresources](https://dwm.suckless.org/patches/xresources/)
+    allows to handle settings from Xresources
+- [attachbottom](https://dwm.suckless.org/patches/xresources/)
+    new clients attach at the bottom of the stack
+- [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
+    actually fullscreen window instead of toggling status bar and monocle layout
+- [warp](https://dwm.suckless.org/patches/warp/)
+    warps mouse cursor to center of focused window
+- [pertag](https://dwm.suckless.org/patches/pertag/)
+    keeps layout, mwfact, barpos, nmaster per tag
+- [gaps](https://dwm.suckless.org/patches/ru_gaps/)
+    adds runtime resizable, useless gaps
+- [save floats](https://dwm.suckless.org/patches/save_floats/)
+    saves size and position of every floating window
 
 ## Requirements
 
