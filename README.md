@@ -18,22 +18,48 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 - [save floats](https://dwm.suckless.org/patches/save_floats/)
     saves size and position of every floating window
 
-## Requirements
-
-In order to build dwm you need the Xlib header files.
-
 ## Installation
-
 Edit config.mk to match your local setup (dwm is installed into
 the /usr/local namespace by default).
 
-Afterwards enter the following command to build and install dwm (if
-necessary as root):
-``` sh
-make clean install
+To install dwm from suckless on Debian based systems, you'll need to install a few dependencies and build it from source. Here are the packages you'll need to install:
+
+1. Xorg: Install the Xorg display server:
+```sh
+sudo apt update
+sudo apt install xorg
 ```
 
-##Running dwm
+2. Build tools: Install the necessary build tools to compile dwm:
+```sh
+sudo apt install build-essential
+```
+
+3. X11 development headers: Install the development headers for X11:
+```sh
+sudo apt install libx11-dev libxft-dev libxinerama-dev
+```
+Once you have installed these packages, you can proceed to download and build dwm. Here are the steps:
+
+1. Download dwm source code:
+```sh
+git clone https://github.com/alibehrozi/dwm.git
+```
+
+2. Change to the dwm directory:
+```sh
+cd dwm
+```
+
+Edit the config.def.h file according to your preferences, if needed.
+
+3. Build and install dwm:
+```sh
+make
+sudo make install
+```
+
+## Running dwm
 
 Add the following line to your .xinitrc to start dwm using startx:
 ``` sh
